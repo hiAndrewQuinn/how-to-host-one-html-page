@@ -1,182 +1,232 @@
-<!-- hehe -->
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>How to Host One HTML Page</title>
-  <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      word-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">How to Host One HTML Page</h1>
-</header>
-<h1 id="how-to-host-one-html-page">How to Host One HTML Page</h1>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<h1 id="get-one-html-page.">Get one HTML page.</h1>
-<p>If you want one for practice, I recommend right-clicking on this one and hitting <code>View page source</code>.</p>
-<p>If you&#x2019;re looking to <em>write</em> a page like I did, well, I used <a href="https://obsidian.md/">Obsidian</a> and <a href="https://pandoc.org/"><code>pandoc</code></a>. That might be a bit much, though, maybe just go with this <a href="https://markdowntohtml.com/">straightforward &#x201C;Convert Markdown to HTML&#x201D; site</a>.</p>
-<p>HTML is <em>not</em> used to make things look pretty or to do programming stuff.</p>
-<ul>
-<li>If you want to make it look pretty, you use <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">CSS</a>.</li>
-<li>If you want to add programming stuff later on, you use <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript</a></li>
-</ul>
-<h1 id="get-a-github-account.">Get a <a href="https://github.com/">Github</a> account.</h1>
-<p>Github is your Undo/Redo&#x2019;s big brother.</p>
-<p>You don&#x2019;t need to know anything about that.</p>
-<h1 id="on-github-start-a-new-repository.">On Github, start a <a href="https://github.com/new">new repository</a>.</h1>
-<p>Push the little + icon and click &#x201C;New repository&#x201D;.</p>
-<p>[[Pasted image 20210620175957.png]]</p>
-<p>Name your repository something.</p>
-<p>[[Pasted image 20210620180144.png]]</p>
-<p>Ignore these. You do not need to &#x201C;learn more&#x201D;. You are perfect as you are.</p>
-<p>[[Pasted image 20210620180234.png]]</p>
-<h1 id="&#xA66E;-be-not-afraid-&#xA66E;">&#xA66E; be not afraid &#xA66E;</h1>
-<p>[[Pasted image 20210620180610.png]]</p>
-<h1 id="hit-that-succulent-creating-a-new-file-link.">Hit that <em>succulent</em> &#x201C;creating a new file&#x201D; link.</h1>
-<p>[[Pasted image 20210620180645.png]]</p>
-<h1 id="paste-your-html-in-there.">Paste your HTML in there.</h1>
-</body>
-</html>
+How to Host One HTML Page
+===
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+# Get one HTML page.
+
+If you want one for practice, I recommend right-clicking on this one and hitting `View page source`.
+
+If you're looking to _write_ a page like I did, well, I used [Obsidian](https://obsidian.md/) and [`pandoc`](https://pandoc.org/). That might be a bit much, though, maybe just go with this [straightforward "Convert Markdown to HTML" site](https://markdowntohtml.com/).
+
+HTML is _not_ used to make things look pretty or to do programming stuff.
+
+* If you want to make it look pretty, you use [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS).
+* If you want to add programming stuff later on, you use [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+
+# Get a [Github](https://github.com/) account.
+
+Github is your Undo/Redo's big brother.
+
+You don't need to know anything about that.
+
+# On Github, start a [new repository](https://github.com/new).
+
+Push the little + icon and click "New repository".
+
+
+
+Name your repository something.
+
+![](Pasted image 20210620180144.png)
+
+Ignore these. You do not need to "learn more". You are perfect as you are.
+
+![](Pasted image 20210620180234.png)
+
+# ꙮ be not afraid ꙮ
+
+![](Pasted image 20210620180610.png)
+
+# Hit that _succulent_ "creating a new file" link.
+
+![](Pasted image 20210620180645.png)
+
+# Paste your HTML in there, _and name it `index.html`._
+
+If you don't name it `index.html`, our later big boy Netlify won't know where to look.
+
+![](Pasted image 20210620182322.png)
+
+
+# Commit that bad boy.
+![](Pasted image 20210620182341.png)
+
+You'll end up on a screen like this.
+
+![](Pasted image 20210620182406.png)
+
+If you check back on `index.html`, you'll suddenly see your code is all nice and well-formatted.
+
+![](Pasted image 20210620182436.png)
+
+**This is where you change things from now on**, with that little pencil.
+
+![](Pasted image 20210620182506.png)
+
+![](Pasted image 20210620182526.png)
+
+![](Pasted image 20210620182540.png)
+
+![](Pasted image 20210620182623.png)
+
+Changes you make here will show up on your actual website a few seconds after you commit the change.
+
+# 🖼 If you have images, put those in the repo too.
+
+Like, for example, I'm going to have to put alllllllllllllll of these hot boys in there too, and probably several more once I'm done.
+
+![](Pasted image 20210620184527.png)
+
+ Luckily, GitHub at least lets you drag and drop.
+
+![](Pasted image 20210620184623.png)
+
+![](Pasted image 20210620184723.png)
+
+![](Pasted image 20210620184759.png)
+
+GitHub wasn't really made for hosting images, as can be seen by the fact that it takes a bit to upload, but I woke up today and chose violence. Nya.
+
+# Get a [Netlify account](https://app.netlify.com/).
+
+Okay, you might have heard about Github, but Netlify is some _real_ insider knowledge.
+
+Somewhere in the world a computer needs to be on at all times to let you visit a website at all times.
+
+We don't want to go through the hassle of setting up an entire multi-tiered VM infrastructure for our lil 🤏 site 🏠🏡🏠 on the World Wide Web 🕸🌐🥺👉🏻👈🏻. Although if you're ~ into ~ that kind of thing, [subscribe to my OnlySDNs](https://www.linkedin.com/in/aquinn2/).
+
+It's a business built off of exactly what we're doing here: Deploying static sites. They let us do a lot of basic stuff for free because they hope when we're rolling in Web shmoney we'll come back to them and use their paid stuff for Big Business™ things.
+
+By the by, if you want to not have to write your next site in raw HTML, [consider a static site generator](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/). I know [Jekyll](https://jekyllrb.com/), although if I was going to start learning one from scratch I'd probably go with [Hugo](https://gohugo.io/) instead.
+
+
+# Hit that _succulent_ ["New Site from Git" button](https://app.netlify.com/start).
+
+![](Pasted image 20210620185053.png)
+
+Since I already have a site on here, mine looks a little different.
+
+But look! See that "Builds" list? Every time I changed `index.html`, senpai Netlify noticed me and automatically updated the [vot5.live](vot5.live) they were actually hosting on their servers.
+
+![](Pasted image 20210620185945.png)
+
+![](Pasted image 20210620190000.png)
+
+![](Pasted image 20210620190032.png)
+
+![](Pasted image 20210620190047.png)
+
+Ignore these. You do not need to "learn more". You are perfect as you are.
+
+![](Pasted image 20210620190109.png)
+
+![](Pasted image 20210620190120.png)
+
+# Wait a moment.
+
+![](Pasted image 20210620190138.png)
+
+# Check that link.
+
+![](Pasted image 20210620190151.png)
+
+![](Pasted image 20210620190200.png)
+
+# WE DID IT
+
+GO US WE'RE SO FUCKING COOL.
+
+If nothing comes up, **double check that your HTML page was actually named `index.html` on Github.** This took me _minutes of my life_ to figure out. Don't be me. Choose life.
+
+# 💸 Time to buy a domain name.
+
+**The link that Netlify gives you will always work, and if you're happy with that stop here.**
+
+But you do actually need to pay 💵💶💷 to get a domain name. Why? Remember when I said there has to be a computer on at all times to keep a Web site up, and that's why we used Netlify?
+
+There are also [computers whose whole job is to remember who's who on the Internet](https://www.cloudflare.com/learning/dns/what-is-a-dns-server/),  and the tech involved in this is actually pretty tough. Someone somewhere needs to get paid to make sure you can actually go to [how-to-host-a-single-html.page](how-to-host-a-single-html.page).
+
+# 💸 Go to [Hover](https://www.hover.com/) and buy a domain name.
+
+![](Pasted image 20210620191102.png)
+
+Hm, I wonder if -- oh, excellent.
+
+![](Pasted image 20210620191130.png)
+
+Mmm. That's kinda hard to read, though. Maybe some dashes?
+
+![](Pasted image 20210620191206.png)
+
+Perfect.
+
+![](Pasted image 20210620191238.png)
+
+Oh, if you see this, you should know Netlify _will_ encrypt your stuff by default, so this isn't really anything to worry about.
+
+![](Pasted image 20210620191305.png)
+
+
+# ꙮ be not afraid ꙮ
+
+![](Pasted image 20210620191408.png)
+
+# Go to the "DNS" tab.
+
+![](Pasted image 20210620191700.png)
+
+# Delete the first two "A" records.
+
+You don't need them, they don't actually do anything.
+
+![](Pasted image 20210620191735.png)
+
+# Make an A record with Hostname `@`, and with IP address `75.2.60.5`.
+
+For some reason, [Netlify makes it really hard to find that `75.2.60.5` number](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/). Probably because they'd prefer you use _their_ nifty little domain name service, but I woke up today and chose violence. Nya.
+
+![](Pasted image 20210620192013.png)
+
+```
+🥺💬 "W-what's the @ for?"
+🤠💬 The @ stands for your 'apex domain'.
+😳💬 "W-what's an apex domain..."
+🤠💭 jfc this kid's a dumbass
+🤠💬 An 'apex domain' is just the website you bought without the www at the front. No I don't know why that makes a difference. It just does.
+```
+
+The `75.2.60.5` I _can_ explain a bit. That points to Netlify's "main load balancer", which is basically a steady, stable mask for an ever-changing sea of servers (and changing IP addresses) underneath it. 
+
+# Make a CNAME record with Hostname `www`, and Value `wherever-the-fuck.netlify.app`.
+
+![](Pasted image 20210620192847.png)
+
+# Go back to your Netlify page and hit "Set up a custom domain".
+
+![](Pasted image 20210620192946.png)
+
+![](Pasted image 20210620193014.png)
+
+![](Pasted image 20210620193025.png)
+
+![](Pasted image 20210620193043.png)
+
+Yeah that's actually pretty normal, it takes Netlify a bit of time to get its certificate. Don't be intimidated.
+
+# 🚶🏻‍♀️ Take a walk 
+
+# Reload the page
+
+![](Pasted image 20210620193805.png)
+
+👌🏻👌🏻
+
+# Test it out! Go there!
+
+![](Pasted image 20210620193831.png)
+
+# 🥳🥳🥳🥳🥳
+
+WE DID IT YEAH
